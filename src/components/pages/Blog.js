@@ -25,13 +25,14 @@ render() {
       <Row><Col size="lg-3 md-2 xs-1"></Col>
         <Col size="lg-6 md-8 xs-10">
         {chosenCat = "Web"}
-        {console.log ("chosenCat = web")}</Col>
+        {console.log ("chosenCat = asdfasdf")}</Col>
         <Col size="lg-3 md-2 xs-1"></Col>
-        <button onClick={() => console.log("WTF???")(chosenCat = "WTF")}
+        <button onClick={() => (project => project.category === "Graphic")}
         >Print
         </button>
       </Row>
      <Row>
+       
       {this.state.projects.filter(project => project.category === chosenCat).map(project =>  (
           <ProjCard
             id={project.id}
